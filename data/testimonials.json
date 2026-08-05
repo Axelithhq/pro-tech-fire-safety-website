@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1",
+    "quote": "Pro-Tech delivered on time with quality workmanship. Their engineering expertise and project management made our fire protection installation seamless.",
+    "author": "Project Manager",
+    "role": "Projects",
+    "company": "IRCON International Ltd",
+    "rating": 5,
+    "avatar_url": null,
+    "is_featured": true,
+    "sort_order": 1,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "2",
+    "quote": "The team's turnkey approach simplified our fire safety compliance. From design to commissioning, everything was handled professionally.",
+    "author": "Facilities Head",
+    "role": "Operations",
+    "company": "DLF Limited",
+    "rating": 5,
+    "avatar_url": null,
+    "is_featured": true,
+    "sort_order": 2,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "3",
+    "quote": "Pro-Tech's structured cabling and surveillance installation for our IT facility was executed with precision. Highly recommended for technology infrastructure.",
+    "author": "IT Director",
+    "role": "Information Technology",
+    "company": "Bengaluru IT Park",
+    "rating": 5,
+    "avatar_url": null,
+    "is_featured": true,
+    "sort_order": 3,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "4",
+    "quote": "The fire rated metal doors supplied by Pro-Tech exceeded our expectations. Quality product, timely delivery, and professional installation.",
+    "author": "Procurement Head",
+    "role": "Supply Chain",
+    "company": "Hospital Infrastructure Project",
+    "rating": 5,
+    "avatar_url": null,
+    "is_featured": true,
+    "sort_order": 4,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "5",
+    "quote": "Their STP and WTP installation for our residential project has been running flawlessly. Pro-Tech provides end-to-end solutions beyond just fire safety.",
+    "author": "Project Director",
+    "role": "Real Estate Development",
+    "company": "Orchid Residency",
+    "rating": 1,
+    "avatar_url": null,
+    "is_featured": false,
+    "sort_order": 5,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "6",
+    "quote": "Responsive, professional, and engineering-led. Pro-Tech is our go-to partner for fire protection across all our projects.",
+    "author": "Senior Engineer",
+    "role": "Engineering",
+    "company": "Industrial Client, Jharsuguda",
+    "rating": 5,
+    "avatar_url": null,
+    "is_featured": false,
+    "sort_order": 6,
+    "is_active": true,
+    "created_at": ""
+  }
+]

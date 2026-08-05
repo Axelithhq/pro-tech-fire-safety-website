@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "Jayanth Mahapatra",
+    "role": "Principal & Primary Contact",
+    "bio": "Primary contact for all fire protection engineering projects. Reachable at +91 82497 85871 for new enquiries and project discussions.",
+    "avatar_url": null,
+    "sort_order": 1,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "2",
+    "name": "Engineering Team",
+    "role": "Design & Engineering",
+    "bio": "Experienced team of fire protection engineers handling detailed engineering drawings, approvals, and system design.",
+    "avatar_url": null,
+    "sort_order": 2,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "3",
+    "name": "Installation Team",
+    "role": "Site Execution",
+    "bio": "Professional installation crew with expertise in fire alarm, sprinkler, HVAC, BMS, and surveillance system commissioning.",
+    "avatar_url": null,
+    "sort_order": 3,
+    "is_active": true,
+    "created_at": ""
+  }
+]

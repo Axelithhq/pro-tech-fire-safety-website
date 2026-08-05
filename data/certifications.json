@@ -1,0 +1,90 @@
+[
+  {
+    "id": "1",
+    "name": "BIS Certified",
+    "slug": "bis-certified",
+    "category": "Bureau of Indian Standards",
+    "description": "All fire extinguishers and equipment conform to BIS standards",
+    "image_url": "/images/certification/bis-certified.svg",
+    "sort_order": 1,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "2",
+    "name": "ISO 9001:2015",
+    "slug": "iso-9001",
+    "category": "Quality Management",
+    "description": "Quality management systems in fire protection engineering",
+    "image_url": "/images/certification/iso-9001.svg",
+    "sort_order": 2,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "3",
+    "name": "NFPA Compliant",
+    "slug": "nfpa-compliant",
+    "category": "National Fire Protection Association",
+    "description": "All installations follow NFPA standards",
+    "image_url": "/images/certification/nfpa-compliant.svg",
+    "sort_order": 3,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "4",
+    "name": "NBC 2016 Compliant",
+    "slug": "nbc-2016-compliant",
+    "category": "National Building Code",
+    "description": "Full compliance with National Building Code 2016",
+    "image_url": "/images/certification/nbc-compliant.svg",
+    "sort_order": 4,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "5",
+    "name": "OISD Compliant",
+    "slug": "oisd-compliant",
+    "category": "Oil Industry Safety Directorate",
+    "description": "Compliance with OISD standards for oil & gas facilities",
+    "image_url": "/images/certification/oisd-compliant.svg",
+    "sort_order": 5,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "6",
+    "name": "ISI Marked",
+    "slug": "isi-marked",
+    "category": "Indian Standards Institute",
+    "description": "All products carry ISI certification mark",
+    "image_url": "/images/certification/isi-marked.svg",
+    "sort_order": 6,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "7",
+    "name": "CE Marked",
+    "slug": "ce-marked",
+    "category": "European Conformity",
+    "description": "European market compliance for select products",
+    "image_url": "/images/certification/ce-marked.svg",
+    "sort_order": 7,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "8",
+    "name": "UL Listed",
+    "slug": "ul-listed",
+    "category": "Underwriters Laboratories",
+    "description": "UL listed components for critical systems",
+    "image_url": "/images/certification/ul-listed.svg",
+    "sort_order": 8,
+    "is_active": true,
+    "created_at": ""
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "title": "IRCON Fire Extinguisher Installation",
+    "category": "Projects",
+    "image_url": null,
+    "description": "Fire extinguisher supply at IRCON International project",
+    "sort_order": 1,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "2",
+    "title": "DLF Kolkata Extinguisher Supply",
+    "category": "Projects",
+    "image_url": null,
+    "description": "BIS approved extinguishers at DLF NTH Kolkata",
+    "sort_order": 2,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "3",
+    "title": "ITPL Bengaluru HVAC Installation",
+    "category": "Projects",
+    "image_url": null,
+    "description": "HVAC ventilation system at ITPL Road facility",
+    "sort_order": 3,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "4",
+    "title": "Sadguru Hospital Fire Safety",
+    "category": "Projects",
+    "image_url": null,
+    "description": "Fire safety equipment at Sadguru Hospital, Cuttack",
+    "sort_order": 4,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "5",
+    "title": "Orchid Residency STP System",
+    "category": "Projects",
+    "image_url": null,
+    "description": "Sewage treatment plant at Orchid Residency, Bhubaneswar",
+    "sort_order": 5,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "6",
+    "title": "Fire Alarm Panel Range",
+    "category": "Products",
+    "image_url": null,
+    "description": "Addressable and conventional fire alarm panels",
+    "sort_order": 6,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "7",
+    "title": "Sprinkler Head & Valve Range",
+    "category": "Products",
+    "image_url": null,
+    "description": "Sprinkler systems and deluge valves",
+    "sort_order": 7,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "8",
+    "title": "Fire Extinguisher Lineup",
+    "category": "Products",
+    "image_url": null,
+    "description": "BIS certified fire extinguisher range",
+    "sort_order": 8,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "9",
+    "title": "Fire Rated Metal Doors",
+    "category": "Products",
+    "image_url": null,
+    "description": "Certified fire rated metal doors",
+    "sort_order": 9,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "10",
+    "title": "Jayanth Mahapatra — Principal Contact",
+    "category": "Team",
+    "image_url": null,
+    "description": "Primary contact person for Pro-Tech Fire & Safety",
+    "sort_order": 10,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "11",
+    "title": "Installation Team at Site",
+    "category": "Team",
+    "image_url": null,
+    "description": "On-site engineering and installation team",
+    "sort_order": 11,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "12",
+    "title": "Jharsuguda Industrial Project",
+    "category": "Projects",
+    "image_url": null,
+    "description": "Dry sprinkler and deluge valve installation",
+    "sort_order": 12,
+    "is_active": true,
+    "created_at": ""
+  }
+]

@@ -1,0 +1,298 @@
+[
+  {
+    "id": "2",
+    "category_id": "1",
+    "title": "Conventional Smoke Detector",
+    "slug": "conventional-smoke-detector",
+    "description": "Reliable ionization and photoelectric smoke detection for standard applications. Cost-effective solution with proven field performance.",
+    "applications": [
+      "Residential",
+      "Small offices",
+      "Warehouses",
+      "Retail spaces",
+      "Schools"
+    ],
+    "specifications": {
+      "voltage": "12/24 VDC",
+      "alarmIndicator": "Red LED",
+      "temperature": "-10°C to 50°C",
+      "ipRating": "IP30",
+      "compatibility": "All conventional panels",
+      "standards": "IS 2189, UL 217",
+      "AMP": "5A"
+    },
+    "image_url": "",
+    "brochure_url": "",
+    "sort_order": 1,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "3",
+    "category_id": "1",
+    "title": "Heat Detector",
+    "slug": "heat-detector",
+    "description": "Fixed temperature and rate-of-rise heat detection for kitchens, boiler rooms, and areas where smoke detection may cause nuisance alarms.",
+    "applications": [
+      "Kitchens",
+      "Boiler rooms",
+      "Parking garages",
+      "Storage areas",
+      "Industrial facilities"
+    ],
+    "specifications": {
+      "voltage": "24 VDC",
+      "temperatureRating": "58°C / 93°C",
+      "detectionType": "Fixed + Rate-of-Rise",
+      "ipRating": "IP44",
+      "compatibility": "Addressable & conventional",
+      "standards": "EN54-5, UL 521"
+    },
+    "image_url": null,
+    "brochure_url": null,
+    "sort_order": 3,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "4",
+    "category_id": "2",
+    "title": "Intelligent Addressable Fire Alarm Panel",
+    "slug": "intelligent-addressable-panel",
+    "description": "Advanced fire alarm control panel supporting up to 500 addressable points. 7\" touchscreen interface, network capable, with event logging and remote programming.",
+    "applications": [
+      "Large commercial buildings",
+      "IT parks",
+      "Hospitals",
+      "Airports",
+      "Industrial plants"
+    ],
+    "specifications": {
+      "capacity": "500 addressable points",
+      "display": "7\" color touchscreen",
+      "communication": "TCP/IP, RS485",
+      "batteryBackup": "24 hours",
+      "standards": "EN54-2, NFPA 72"
+    },
+    "image_url": null,
+    "brochure_url": null,
+    "sort_order": 4,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "5",
+    "category_id": "2",
+    "title": "Conventional Fire Alarm Panel",
+    "slug": "conventional-fire-alarm-panel",
+    "description": "Cost-effective conventional panel with 4-16 zone configurations. Clear LED zone indication for quick response.",
+    "applications": [
+      "Small buildings",
+      "Restaurants",
+      "Schools",
+      "Retail stores",
+      "Small offices"
+    ],
+    "specifications": {
+      "zones": "4, 8, 12, or 16 zone options",
+      "indicators": "Zone-wise LED display",
+      "outputs": "2 programmable relays",
+      "batteryBackup": "24 hours",
+      "standards": "IS 2189, NFPA 72"
+    },
+    "image_url": null,
+    "brochure_url": null,
+    "sort_order": 5,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "6",
+    "category_id": "3",
+    "title": "Standard Response Sprinkler Head",
+    "slug": "standard-response-sprinkler",
+    "description": "UL-listed standard response sprinkler heads for commercial and industrial applications. Available in pendant, upright, and sidewall configurations.",
+    "applications": [
+      "Commercial buildings",
+      "Industrial plants",
+      "Warehouses",
+      "Parking structures",
+      "Storage facilities"
+    ],
+    "specifications": {
+      "temperatureRating": "68°C / 93°C",
+      "kFactor": "5.6 / 8.0 / 11.2",
+      "response": "Standard response",
+      "orientation": "Pendant, upright, sidewall",
+      "finish": "Chrome, brass, white",
+      "standards": "UL, FM, IS 15105"
+    },
+    "image_url": null,
+    "brochure_url": null,
+    "sort_order": 6,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "7",
+    "category_id": "3",
+    "title": "Deluge Valve Assembly",
+    "slug": "deluge-valve-assembly",
+    "description": "Complete deluge valve system with trim package for high-hazard applications. Pneumatic, hydraulic, or electric actuation options.",
+    "applications": [
+      "Industrial plants",
+      "Airports",
+      "Power plants",
+      "Chemical storage",
+      "Flammable liquid areas"
+    ],
+    "specifications": {
+      "valveSize": "DN50 to DN200",
+      "actuation": "Pneumatic / Hydraulic / Electric",
+      "trimPackage": "Complete with solenoid",
+      "workingPressure": "12 bar",
+      "material": "Ductile iron / Stainless steel",
+      "standards": "UL, FM, IS 14845"
+    },
+    "image_url": null,
+    "brochure_url": null,
+    "sort_order": 7,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "8",
+    "category_id": "4",
+    "title": "ABC Dry Powder Extinguisher",
+    "slug": "abc-dry-powder-extinguisher",
+    "description": "Multi-purpose dry powder extinguisher for Class A, B, and C fires. BIS approved with ISI mark.",
+    "applications": [
+      "General purpose",
+      "Offices",
+      "Factories",
+      "Vehicles",
+      "Warehouses"
+    ],
+    "specifications": {
+      "capacity": "2kg / 4kg / 6kg / 9kg",
+      "fireRating": "2A 34B C (6kg)",
+      "temperature": "-20°C to 60°C",
+      "dischargeTime": "15-20 seconds",
+      "agent": "Monoammonium phosphate",
+      "standards": "IS 15683, BIS certified"
+    },
+    "image_url": null,
+    "brochure_url": null,
+    "sort_order": 8,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "9",
+    "category_id": "4",
+    "title": "CO2 Extinguisher",
+    "slug": "co2-extinguisher",
+    "description": "Clean agent CO2 extinguisher for electrical fires and sensitive equipment. Leaves no residue.",
+    "applications": [
+      "Data centers",
+      "Electrical rooms",
+      "Laboratories",
+      "Server rooms",
+      "Control rooms"
+    ],
+    "specifications": {
+      "capacity": "2kg / 4.5kg / 6.5kg",
+      "fireRating": "34B C (4.5kg)",
+      "temperature": "-20°C to 50°C",
+      "dischargeTime": "10-15 seconds",
+      "agent": "Carbon dioxide (CO2)",
+      "standards": "IS 15683, BIS certified"
+    },
+    "image_url": null,
+    "brochure_url": null,
+    "sort_order": 9,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "10",
+    "category_id": "5",
+    "title": "Foam Proportioning System",
+    "slug": "foam-proportioning-system",
+    "description": "Complete foam suppression systems including bladder tanks, proportioners, and foam chambers for industrial fire protection.",
+    "applications": [
+      "Fuel storage farms",
+      "Chemical plants",
+      "Airport hangars",
+      "Industrial facilities",
+      "Flammable liquid storage"
+    ],
+    "specifications": {
+      "type": "Bladder tank / Inline",
+      "proportioning": "1%, 3%, 6%",
+      "foamConcentrate": "AFFF / AR-AFFF / Protein",
+      "tankSize": "100L to 5000L",
+      "material": "Carbon steel / Stainless steel",
+      "standards": "NFPA 11, UL, FM"
+    },
+    "image_url": null,
+    "brochure_url": null,
+    "sort_order": 10,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "11",
+    "category_id": "6",
+    "title": "Fire Rated Metal Door — Single Leaf",
+    "slug": "fire-rated-metal-door-single",
+    "description": "Single leaf fire rated metal door tested to 60/90/120 minute fire resistance. Complete with intumescent seals, closer, and panic hardware.",
+    "applications": [
+      "Commercial buildings",
+      "Hospitals",
+      "Airports",
+      "Hotels",
+      "Staircase enclosures"
+    ],
+    "specifications": {
+      "fireRating": "60 / 90 / 120 minutes",
+      "leafType": "Single leaf",
+      "material": "Rolled steel sheet",
+      "thickness": "1.2mm / 1.6mm",
+      "finish": "Powder coated / Duco paint",
+      "standards": "IS 3614, BS 476"
+    },
+    "image_url": null,
+    "brochure_url": null,
+    "sort_order": 11,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "12",
+    "category_id": "6",
+    "title": "Fire Rated Metal Door — Double Leaf",
+    "slug": "fire-rated-metal-door-double",
+    "description": "Double leaf fire rated metal door with active/passive leaves. Ideal for corridors, lobbies, and larger openings requiring fire compartmentation.",
+    "applications": [
+      "Hospital corridors",
+      "Hotel lobbies",
+      "Office buildings",
+      "Airport terminals",
+      "Industrial facilities"
+    ],
+    "specifications": {
+      "fireRating": "60 / 90 / 120 minutes",
+      "leafType": "Double leaf (active + passive)",
+      "material": "Rolled steel sheet",
+      "thickness": "1.2mm / 1.6mm",
+      "finish": "Powder coated / Duco paint",
+      "standards": "IS 3614, BS 476"
+    },
+    "image_url": null,
+    "brochure_url": null,
+    "sort_order": 12,
+    "is_active": true,
+    "created_at": ""
+  }
+]

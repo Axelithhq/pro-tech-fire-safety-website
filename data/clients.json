@@ -1,0 +1,145 @@
+[
+  {
+    "id": "1",
+    "name": "Larsen & Toubro (L&T)",
+    "slug": "larsen-toubro",
+    "logo_url": "/images/clients/lt.svg",
+    "website_url": "https://www.larsentoubro.com",
+    "is_featured": true,
+    "sort_order": 1,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "2",
+    "name": "Godrej & Boyce",
+    "slug": "godrej-boyce",
+    "logo_url": "/images/clients/godrej.svg",
+    "website_url": "https://www.godrej.com",
+    "is_featured": true,
+    "sort_order": 2,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "3",
+    "name": "HPCL",
+    "slug": "hpcl",
+    "logo_url": "/images/clients/hpcl.svg",
+    "website_url": "https://www.hpcl.com",
+    "is_featured": true,
+    "sort_order": 3,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "4",
+    "name": "DMart",
+    "slug": "dmart",
+    "logo_url": "/images/clients/dmart.svg",
+    "website_url": "https://www.dmart.in",
+    "is_featured": true,
+    "sort_order": 4,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "5",
+    "name": "Shapoorji Pallonji",
+    "slug": "shapoorji-pallonji",
+    "logo_url": "/images/clients/shapoorji.svg",
+    "website_url": "https://www.shapoorjipallonji.com",
+    "is_featured": true,
+    "sort_order": 5,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "6",
+    "name": "GMR Group",
+    "slug": "gmr-group",
+    "logo_url": "/images/clients/gmr.svg",
+    "website_url": "https://www.gmrgroup.in",
+    "is_featured": true,
+    "sort_order": 6,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "7",
+    "name": "My Home Bhooja",
+    "slug": "my-home-bhooja",
+    "logo_url": "/images/clients/myhome.svg",
+    "website_url": "",
+    "is_featured": true,
+    "sort_order": 7,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "8",
+    "name": "Biju Pattnaik International Airport",
+    "slug": "bhubaneswar-airport",
+    "logo_url": "/images/clients/airport.svg",
+    "website_url": "",
+    "is_featured": true,
+    "sort_order": 8,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "9",
+    "name": "IRCON International Ltd",
+    "slug": "ircon-international",
+    "logo_url": "/images/clients/ircon.svg",
+    "website_url": "https://www.ircon.org",
+    "is_featured": true,
+    "sort_order": 9,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "10",
+    "name": "DLF Limited",
+    "slug": "dlf-limited",
+    "logo_url": "/images/clients/dlf.svg",
+    "website_url": "https://www.dlf.in",
+    "is_featured": true,
+    "sort_order": 10,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "11",
+    "name": "GOAW",
+    "slug": "goaw",
+    "logo_url": null,
+    "website_url": "",
+    "is_featured": true,
+    "sort_order": 11,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "12",
+    "name": "Sadguru Hospital",
+    "slug": "sadguru-hospital",
+    "logo_url": null,
+    "website_url": "",
+    "is_featured": true,
+    "sort_order": 12,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "13",
+    "name": "Government of India Projects",
+    "slug": "government-projects",
+    "logo_url": null,
+    "website_url": "",
+    "is_featured": true,
+    "sort_order": 13,
+    "is_active": true,
+    "created_at": ""
+  }
+]

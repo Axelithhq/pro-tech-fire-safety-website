@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "name": "Fire Detection Systems",
+    "slug": "fire-detection-systems",
+    "description": "Smoke, heat, and multi-sensor detectors for every environment",
+    "image_url": null,
+    "sort_order": 1,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "2",
+    "name": "Fire Alarm Panels",
+    "slug": "fire-alarm-panels",
+    "description": "Intelligent addressable and conventional fire alarm control panels",
+    "image_url": null,
+    "sort_order": 2,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "3",
+    "name": "Sprinkler Components",
+    "slug": "sprinkler-components",
+    "description": "Sprinkler heads, valves, pipes, and accessories",
+    "image_url": null,
+    "sort_order": 3,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "4",
+    "name": "Fire Extinguishers",
+    "slug": "fire-extinguishers",
+    "description": "All classes of portable fire extinguishers and accessories",
+    "image_url": null,
+    "sort_order": 4,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "5",
+    "name": "Deluge & Special Systems",
+    "slug": "deluge-special-systems",
+    "description": "Deluge valves, foam systems, and specialized suppression",
+    "image_url": null,
+    "sort_order": 5,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "6",
+    "name": "Fire Rated Doors",
+    "slug": "fire-rated-doors",
+    "description": "Certified fire rated metal doors for all applications",
+    "image_url": null,
+    "sort_order": 6,
+    "is_active": true,
+    "created_at": ""
+  }
+]

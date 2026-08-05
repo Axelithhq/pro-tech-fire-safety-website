@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "title": "Turnkey Expertise",
+    "description": "Single point of accountability from design through commissioning. We handle everything — design, engineering, manufacturing, supply, installation, testing and commissioning.",
+    "icon": "Building2",
+    "sort_order": 1,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "2",
+    "title": "Pan-India Presence",
+    "description": "Pan-India project capability with proven execution across multiple states including Odisha, West Bengal, Karnataka, Maharashtra, and Madhya Pradesh.",
+    "icon": "Map",
+    "sort_order": 2,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "3",
+    "title": "Proven Track Record",
+    "description": "Repeat and referral business from satisfied clients including IRCON, DLF, and government institutions. Every project is a reference.",
+    "icon": "Award",
+    "sort_order": 3,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "4",
+    "title": "Ready to Scale",
+    "description": "Scalable manpower and infrastructure to handle projects of any size — from small installations to large industrial complexes.",
+    "icon": "TrendingUp",
+    "sort_order": 4,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "5",
+    "title": "Engineering-Led Execution",
+    "description": "Engineering-led approach ensures every installation is technically sound, code compliant, and built to last.",
+    "icon": "PenTool",
+    "sort_order": 5,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "6",
+    "title": "Experienced Professional Team",
+    "description": "An experienced professional team dedicated to delivering quality workmanship and long-term client support.",
+    "icon": "Users",
+    "sort_order": 6,
+    "is_active": true,
+    "created_at": ""
+  }
+]

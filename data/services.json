@@ -1,0 +1,254 @@
+[
+  {
+    "id": "1",
+    "title": "Fire Alarm Systems",
+    "slug": "fire-alarm-systems",
+    "subtitle": "Early warning that saves lives",
+    "description": "Complete fire alarm system solutions including intelligent addressable and conventional panels, smoke detectors, heat detectors, manual call points, hooters, and beacon systems. Integrated with BMS for centralized monitoring.",
+    "icon": "Bell",
+    "image_url": "",
+    "features": [
+      "Intelligent addressable & conventional panels",
+      "Smoke, heat & multi-criteria detection",
+      "Manual call points & hooters",
+      "BMS integration for centralized monitoring",
+      "24/7 remote diagnostics",
+      "NBC 2016 & NFPA 72 compliant"
+    ],
+    "is_featured": true,
+    "sort_order": 1,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "2",
+    "title": "Sprinkler Systems",
+    "slug": "sprinkler-systems",
+    "subtitle": "Automatic fire suppression",
+    "description": "Design, supply and installation of complete sprinkler systems including wet riser, dry riser, pre-action and deluge systems. Engineered to NFPA 13 standards with full hydraulic calculations.",
+    "icon": "Flame",
+    "image_url": null,
+    "features": [
+      "Wet riser & dry riser systems",
+      "Pre-action & deluge systems",
+      "Hydraulic calculations per NFPA 13",
+      "Fire pumps & storage tanks",
+      "Valve manifolds & flow switches",
+      "Testing & commissioning"
+    ],
+    "is_featured": true,
+    "sort_order": 2,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "3",
+    "title": "Fire Extinguishers",
+    "slug": "fire-extinguishers",
+    "subtitle": "First line of defense",
+    "description": "Supply and maintenance of all classes of portable fire extinguishers — ABC powder, CO2, foam, and water type. BIS approved and fully certified.",
+    "icon": "TriangleAlert",
+    "image_url": null,
+    "features": [
+      "ABC dry powder extinguishers",
+      "CO2 extinguishers for electrical fires",
+      "Foam & water type extinguishers",
+      "BIS approved & certified",
+      "Periodic maintenance & refilling",
+      "On-site training for occupants"
+    ],
+    "is_featured": true,
+    "sort_order": 3,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "4",
+    "title": "Deluge Valve Systems",
+    "slug": "deluge-valve-systems",
+    "subtitle": "High-hazard protection",
+    "description": "Engineered deluge valve systems for high-hazard industrial applications. Designed for rapid water delivery with manual, automatic, or remote actuation options.",
+    "icon": "Droplets",
+    "image_url": null,
+    "features": [
+      "Hydraulic & pneumatically actuated",
+      "Manual & automatic release",
+      "Compatible with foam injection",
+      "High-hazard industrial applications",
+      "NFPA 15 compliant design",
+      "Complete skid-mounted solutions"
+    ],
+    "is_featured": false,
+    "sort_order": 4,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "5",
+    "title": "LP Gas Piping Systems",
+    "slug": "lp-gas-piping-systems",
+    "subtitle": "Safe gas distribution",
+    "description": "Design and installation of LP gas piping systems for industrial, commercial, and institutional kitchens and facilities. Complete with safety shut-off and leak detection.",
+    "icon": "Fuel",
+    "image_url": null,
+    "features": [
+      "LP gas piping design & installation",
+      "Safety shut-off valves",
+      "Gas leak detection systems",
+      "Pressure regulation stations",
+      "Pipeline testing & certification",
+      "Compliance with OISD & PESO standards"
+    ],
+    "is_featured": false,
+    "sort_order": 5,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "6",
+    "title": "HVAC Ventilation Systems",
+    "slug": "hvac-ventilation-systems",
+    "subtitle": "Controlled environment",
+    "description": "Design and installation of HVAC ventilation systems for commercial, IT, and industrial projects. Includes ducted and ductless solutions with energy-efficient equipment.",
+    "icon": "Wind",
+    "image_url": null,
+    "features": [
+      "HVAC system design & engineering",
+      "Ducted & ductless ventilation",
+      "Fresh air & exhaust systems",
+      "Staircase pressurization",
+      "Basement ventilation",
+      "Energy-efficient equipment selection"
+    ],
+    "is_featured": false,
+    "sort_order": 6,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "7",
+    "title": "STP & WTP Systems",
+    "slug": "stp-wtp-systems",
+    "subtitle": "Water & wastewater treatment",
+    "description": "Design, supply and installation of sewage treatment plants (STP) and water treatment plants (WTP) for residential, commercial, and industrial projects.",
+    "icon": "Droplet",
+    "image_url": null,
+    "features": [
+      "STP design & installation",
+      "WTP design & installation",
+      "MBBR & SBR technologies",
+      "Zero liquid discharge systems",
+      "Operation & maintenance",
+      "Water quality testing"
+    ],
+    "is_featured": false,
+    "sort_order": 7,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "8",
+    "title": "Fire Rated Metal Doors",
+    "slug": "fire-rated-metal-doors",
+    "subtitle": "Compartmentation that saves lives",
+    "description": "Supply and installation of fire rated metal doors for commercial buildings, hospitals, airports, and industrial facilities. Tested and certified to relevant fire resistance standards.",
+    "icon": "DoorOpen",
+    "image_url": null,
+    "features": [
+      "Fire rated up to 120 minutes",
+      "Single & double leaf configurations",
+      "Hospitals, airports & commercial",
+      "Certified fire resistance ratings",
+      "Custom sizes & finishes",
+      "Complete with hardware & seals"
+    ],
+    "is_featured": false,
+    "sort_order": 8,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "9",
+    "title": "CCTV & Surveillance Systems",
+    "slug": "cctv-surveillance-systems",
+    "subtitle": "See everything, secure everything",
+    "description": "Comprehensive CCTV and surveillance solutions including HD cameras, NVRs, remote monitoring, and integrated security systems for commercial and industrial facilities.",
+    "icon": "Camera",
+    "image_url": null,
+    "features": [
+      "HD & IP camera systems",
+      "NVR & DVR recording solutions",
+      "Remote monitoring via mobile",
+      "Night vision & thermal cameras",
+      "Integrated access control",
+      "Structured cabling for security"
+    ],
+    "is_featured": false,
+    "sort_order": 9,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "10",
+    "title": "Building Management System (BMS)",
+    "slug": "building-management-system",
+    "subtitle": "Intelligent building control",
+    "description": "Design and implementation of building management systems integrating fire alarm, HVAC, lighting, access control, and surveillance into a single unified platform.",
+    "icon": "Monitor",
+    "image_url": null,
+    "features": [
+      "Integrated building automation",
+      "Fire alarm & HVAC integration",
+      "Energy management & optimization",
+      "Remote monitoring & control",
+      "BACnet & Modbus protocols",
+      "Custom dashboard & reporting"
+    ],
+    "is_featured": false,
+    "sort_order": 10,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "11",
+    "title": "Structured Cabling",
+    "slug": "structured-cabling",
+    "subtitle": "Reliable network infrastructure",
+    "description": "Design and installation of structured cabling systems for voice, data, and video networks. Category 6/6A and fiber optic solutions for IT parks and commercial buildings.",
+    "icon": "Network",
+    "image_url": null,
+    "features": [
+      "Cat6 / Cat6A copper cabling",
+      "Fiber optic backbone",
+      "Rack & patch panel installation",
+      "Testing & certification",
+      "IT park & commercial buildings",
+      "Scalable infrastructure design"
+    ],
+    "is_featured": false,
+    "sort_order": 11,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "12",
+    "title": "Fuel Oil Handling Systems",
+    "slug": "fuel-oil-handling-systems",
+    "subtitle": "Reliable fuel supply",
+    "description": "Design and installation of fuel oil handling systems including storage tanks, transfer pumps, piping, and day tanks for industrial and commercial applications.",
+    "icon": "Fuel",
+    "image_url": null,
+    "features": [
+      "Storage tanks & day tanks",
+      "Transfer pump systems",
+      "Fuel piping & filtration",
+      "Leak detection & alarms",
+      "Level monitoring & automation",
+      "OISD compliant installations"
+    ],
+    "is_featured": false,
+    "sort_order": 12,
+    "is_active": true,
+    "created_at": ""
+  }
+]

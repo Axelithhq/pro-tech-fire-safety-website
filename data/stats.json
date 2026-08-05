@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1",
+    "heading": "Ready to Secure Your Facility?",
+    "subtitle": "Schedule a consultation with our engineering team for a comprehensive safety assessment.",
+    "stats": [
+      {
+        "number": 4,
+        "suffix": "+",
+        "label": "Years of Experience"
+      },
+      {
+        "number": 20,
+        "suffix": "+",
+        "label": "States Served"
+      }
+    ],
+    "is_active": true,
+    "created_at": ""
+  }
+]

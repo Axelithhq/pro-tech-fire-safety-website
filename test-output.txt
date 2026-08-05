@@ -1,0 +1,6 @@
+▲ Next.js 16.2.10 (Turbopack)
+- Local:         http://localhost:3002
+- Network:       http://192.168.29.23:3002
+✓ Ready in 520ms
+
+IMAGE DOWNLOADED: 10533 bytes

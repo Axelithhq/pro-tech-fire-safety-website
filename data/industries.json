@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "name": "Commercial Buildings",
+    "slug": "commercial-buildings",
+    "description": "Comprehensive fire protection for offices, malls, and commercial complexes with advanced detection and suppression systems.",
+    "icon": "",
+    "image_url": null,
+    "project_count": 13,
+    "sort_order": 2,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "2",
+    "name": "Hospitals",
+    "slug": "hospitals",
+    "description": "Critical fire safety systems for hospitals and healthcare facilities ensuring patient safety and regulatory compliance.",
+    "icon": "Heart",
+    "image_url": null,
+    "project_count": 13,
+    "sort_order": 1,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "3",
+    "name": "Airports",
+    "slug": "airports",
+    "description": "Specialized fire protection for airport terminals, hangars, and aviation infrastructure.",
+    "icon": "Plane",
+    "image_url": null,
+    "project_count": 13,
+    "sort_order": 3,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "4",
+    "name": "Industrial Plants",
+    "slug": "industrial-plants",
+    "description": "Turnkey fire protection for manufacturing plants, processing facilities, and industrial complexes.",
+    "icon": "Factory",
+    "image_url": null,
+    "project_count": 13,
+    "sort_order": 4,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "5",
+    "name": "IT Parks",
+    "slug": "it-parks",
+    "description": "Advanced detection and suppression for technology parks and data centers.",
+    "icon": "Server",
+    "image_url": null,
+    "project_count": 13,
+    "sort_order": 5,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "6",
+    "name": "Residential Projects",
+    "slug": "residential-projects",
+    "description": "Modern fire safety systems for apartments, gated communities, and residential towers.",
+    "icon": "Home",
+    "image_url": null,
+    "project_count": 13,
+    "sort_order": 6,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "7",
+    "name": "High-rise Buildings",
+    "slug": "high-rise-buildings",
+    "description": "Comprehensive fire protection engineered for multi-story and high-rise structures.",
+    "icon": "Building",
+    "image_url": null,
+    "project_count": 13,
+    "sort_order": 7,
+    "is_active": true,
+    "created_at": ""
+  },
+  {
+    "id": "8",
+    "name": "Government Infrastructure",
+    "slug": "government-infrastructure",
+    "description": "Fire protection for government buildings, public infrastructure, and institutional facilities.",
+    "icon": "Shield",
+    "image_url": null,
+    "project_count": 13,
+    "sort_order": 8,
+    "is_active": true,
+    "created_at": ""
+  }
+]

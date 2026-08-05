@@ -1,0 +1,110 @@
+[
+  {
+    "id": "1",
+    "title": "Fire Protection Engineer",
+    "slug": "fire-protection-engineer",
+    "location": "Bhubaneswar, Odisha",
+    "type": "Full-time",
+    "department": "Engineering",
+    "description": "Design and engineer fire protection systems including fire alarm, sprinkler, and suppression systems for commercial and industrial projects.",
+    "requirements": [
+      "B.E./B.Tech in Mechanical/Electrical",
+      "3+ years fire protection experience",
+      "NBC, NFPA, BIS standards knowledge",
+      "AutoCAD proficiency"
+    ],
+    "is_active": true,
+    "sort_order": 1,
+    "created_at": ""
+  },
+  {
+    "id": "2",
+    "title": "Project Supervisor — Fire Safety Installations",
+    "slug": "project-supervisor-fire-safety",
+    "location": "Bengaluru, Karnataka",
+    "type": "Full-time",
+    "department": "Projects",
+    "description": "Supervise on-site installation of fire protection systems ensuring quality, timeline and safety compliance.",
+    "requirements": [
+      "Diploma/Degree in Engineering",
+      "5+ years site supervision",
+      "Fire alarm & sprinkler installation experience",
+      "Strong team management"
+    ],
+    "is_active": true,
+    "sort_order": 2,
+    "created_at": ""
+  },
+  {
+    "id": "3",
+    "title": "Sales & Business Development Executive",
+    "slug": "sales-business-development",
+    "location": "Odisha / Bengaluru",
+    "type": "Full-time",
+    "department": "Sales",
+    "description": "Drive business development, prepare technical proposals, and build client relationships for fire protection projects.",
+    "requirements": [
+      "B.Tech/B.E. preferred",
+      "2+ years technical sales",
+      "Fire protection industry knowledge",
+      "Excellent communication skills"
+    ],
+    "is_active": true,
+    "sort_order": 3,
+    "created_at": ""
+  },
+  {
+    "id": "4",
+    "title": "Fire Alarm Technician",
+    "slug": "fire-alarm-technician",
+    "location": "Bengaluru, Karnataka",
+    "type": "Full-time",
+    "department": "Operations",
+    "description": "Install, test and commission fire alarm systems including addressable and conventional panels, detectors, and notification devices.",
+    "requirements": [
+      "ITI/Diploma Electrical",
+      "2+ years fire alarm experience",
+      "Addressable panel programming",
+      "Valid driving license"
+    ],
+    "is_active": true,
+    "sort_order": 4,
+    "created_at": ""
+  },
+  {
+    "id": "5",
+    "title": "HVAC Technician",
+    "slug": "hvac-technician",
+    "location": "Bengaluru, Karnataka",
+    "type": "Full-time",
+    "department": "Operations",
+    "description": "Install and maintain HVAC ventilation systems for commercial and IT projects.",
+    "requirements": [
+      "ITI/Diploma in Refrigeration & AC",
+      "3+ years HVAC installation",
+      "Ducted & ductless system experience",
+      "Knowledge of pressurization systems"
+    ],
+    "is_active": true,
+    "sort_order": 5,
+    "created_at": ""
+  },
+  {
+    "id": "6",
+    "title": "BMS Engineer",
+    "slug": "bms-engineer",
+    "location": "Navi Mumbai, Maharashtra",
+    "type": "Full-time",
+    "department": "Engineering",
+    "description": "Design, program and commission Building Management Systems integrating fire alarm, HVAC, surveillance and access control.",
+    "requirements": [
+      "B.E./B.Tech Electrical/Electronics",
+      "3+ years BMS experience",
+      "BACnet/Modbus protocol knowledge",
+      "PLC & SCADA experience preferred"
+    ],
+    "is_active": true,
+    "sort_order": 6,
+    "created_at": ""
+  }
+]
