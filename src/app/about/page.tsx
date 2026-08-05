@@ -141,8 +141,8 @@ export default async function AboutPage() {
                 <div className="relative h-[500px] w-full overflow-hidden">
                   <img
                     src="/images/Director.jpeg"
-                    alt="Pro-Tech Fire & Safety Managing Director"
-                    className="absolute inset-0 h-full w-full object-cover transition-all duration-700 group-hover:scale-105"
+                    alt="Kavita Mahapatra - Pro-Tech Fire & Safety Managing Director"
+                    className="absolute inset-0 h-400px w-full object-cover transition-all duration-700 group-hover:scale-105"
                     style={{ display: 'block' }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-navy-900/20 to-transparent" />
@@ -152,7 +152,7 @@ export default async function AboutPage() {
                     <div className="h-1 w-8 rounded-full bg-gold-500" />
                     <p className="text-sm font-medium tracking-widest text-gold-400 uppercase">Managing Director</p>
                   </div>
-                  <p className="font-heading text-3xl font-bold text-white">Managing Director</p>
+                  <p className="font-heading text-3xl font-bold text-white">Kavita Mahapatra</p>
                   <p className="mt-1 text-sm text-white/50">Leading with vision and dedication</p>
                 </div>
                 <div className="absolute left-0 top-0 h-1 w-0 bg-gradient-to-r from-gold-500 to-amber-400 transition-all duration-1000 group-hover:w-full" />
