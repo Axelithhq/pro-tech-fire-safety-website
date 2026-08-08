@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { Download, Check, Shield } from 'lucide-react'
 import { getCategories, getProducts } from '@/lib/cms'
 import ScrollReveal from '@/components/ui/ScrollReveal'
@@ -7,6 +8,11 @@ import Section from '@/components/ui/Section'
 import Button from '@/components/ui/Button'
 import HeroParticles from '@/components/effects/HeroParticles'
 import TiltCard from '@/components/effects/TiltCard'
+
+export const metadata: Metadata = {
+  title: 'Fire Safety Products & Systems Catalog | Pro-Tech Fire & Safety',
+  description: 'Explore certified fire protection products: addressable smoke detectors, fire alarm control panels, sprinkler heads, deluge valves, ABC dry powder extinguishers, CO2 systems, and fire doors.',
+}
 
 const productImages: Record<string, string> = {
   'Intelligent Addressable Smoke Detector': '/images/products/smoke-detector.jpg',

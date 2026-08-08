@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { ArrowLeft, Check, Download } from 'lucide-react'
 import { getProducts, getProductBySlug } from '@/lib/cms'
 import TextRevealHeading from '@/components/effects/TextRevealHeading'
@@ -7,13 +8,38 @@ import Section from '@/components/ui/Section'
 import Button from '@/components/ui/Button'
 import { notFound } from 'next/navigation'
 
+interface Props {
+  params: Promise<{ slug: string }>
+}
+
 export async function generateStaticParams() {
   const products = await getProducts()
   return products.map((p) => ({ slug: p.slug }))
 }
 
-interface Props {
-  params: Promise<{ slug: string }>
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params
+  const product = await getProductBySlug(slug)
+  if (!product) return {}
+
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://protechfiresafety.com'
+  const title = `${product.title} - Fire Safety Equipment`
+  const description = product.description.slice(0, 160)
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: `${baseUrl}/products/${product.slug}`,
+    },
+    openGraph: {
+      title: `${product.title} | Pro-Tech Fire & Safety`,
+      description,
+      url: `${baseUrl}/products/${product.slug}`,
+      type: 'website',
+      images: product.image_url ? [{ url: product.image_url }] : [],
+    },
+  }
 }
 
 export default async function ProductDetailPage({ params }: Props) {
@@ -21,8 +47,46 @@ export default async function ProductDetailPage({ params }: Props) {
   const product = await getProductBySlug(slug)
   if (!product) notFound()
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://protechfiresafety.com'
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.title,
+    description: product.description,
+    image: product.image_url ? [product.image_url] : [`${baseUrl}/icon.svg`],
+    brand: {
+      '@type': 'Brand',
+      name: 'Pro-Tech Fire & Safety',
+    },
+    offers: {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'INR',
+      price: 'Contact for Quote',
+      availability: 'https://schema.org/InStock',
+    },
+  }
+
+  const breadcrumbsJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
+      { '@type': 'ListItem', position: 2, name: 'Products', item: `${baseUrl}/products` },
+      { '@type': 'ListItem', position: 3, name: product.title, item: `${baseUrl}/products/${product.slug}` },
+    ],
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsJsonLd) }}
+      />
       <section className="relative flex min-h-[50vh] items-center bg-navy-900 pt-32">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-navy-700 via-navy-900 to-navy-950" />
         <Container className="relative z-10">
@@ -80,8 +144,8 @@ export default async function ProductDetailPage({ params }: Props) {
                   Enquire About This Product
                 </Button>
                 {product.brochure_url && (
-                  <Button variant="outline">
-                    <Download size={14} />
+                  <Button href={product.brochure_url} variant="outline" target="_blank" rel="noopener noreferrer">
+                    <Download size={14} className="mr-2" />
                     Download Brochure
                   </Button>
                 )}

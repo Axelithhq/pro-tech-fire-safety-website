@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { Check, ArrowRight, ShieldAlert } from 'lucide-react'
 import { getServices } from '@/lib/cms'
 import ScrollReveal from '@/components/ui/ScrollReveal'
@@ -7,6 +8,11 @@ import Section from '@/components/ui/Section'
 import Button from '@/components/ui/Button'
 import HeroParticles from '@/components/effects/HeroParticles'
 import TiltCard from '@/components/effects/TiltCard'
+
+export const metadata: Metadata = {
+  title: 'Fire Protection & Engineering Services | Pro-Tech Fire & Safety',
+  description: 'Turnkey fire protection engineering services including automatic fire sprinklers, fire alarm detection, CO2 suppression, hydrants, LP gas piping, HVAC, and NBC safety audits across India.',
+}
 
 const hero = {
   title: 'Comprehensive Fire Protection',

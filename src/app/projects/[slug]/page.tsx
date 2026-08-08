@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { ArrowLeft, MapPin, Calendar, Crosshair, Building2 } from 'lucide-react'
 import { getProjects, getProjectBySlug } from '@/lib/cms'
 import TextRevealHeading from '@/components/effects/TextRevealHeading'
@@ -6,13 +7,38 @@ import Section from '@/components/ui/Section'
 import Button from '@/components/ui/Button'
 import { notFound } from 'next/navigation'
 
+interface Props {
+  params: Promise<{ slug: string }>
+}
+
 export async function generateStaticParams() {
   const projects = await getProjects()
   return projects.map((p) => ({ slug: p.slug }))
 }
 
-interface Props {
-  params: Promise<{ slug: string }>
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params
+  const project = await getProjectBySlug(slug)
+  if (!project) return {}
+
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://protechfiresafety.com'
+  const title = `${project.title} - Fire Safety Engineering Project`
+  const description = `${project.scope} project in ${project.location} for ${project.client || 'Client'}. ${project.details.slice(0, 100)}`
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: `${baseUrl}/projects/${project.slug}`,
+    },
+    openGraph: {
+      title: `${project.title} | Pro-Tech Project Portfolio`,
+      description,
+      url: `${baseUrl}/projects/${project.slug}`,
+      type: 'website',
+      images: project.image_url ? [{ url: project.image_url }] : [],
+    },
+  }
 }
 
 export default async function ProjectDetailPage({ params }: Props) {
@@ -20,8 +46,44 @@ export default async function ProjectDetailPage({ params }: Props) {
   const project = await getProjectBySlug(slug)
   if (!project) notFound()
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://protechfiresafety.com'
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    name: project.title,
+    description: project.details,
+    creator: {
+      '@type': 'Organization',
+      name: 'Pro-Tech Fire & Safety',
+    },
+    locationCreated: {
+      '@type': 'Place',
+      name: project.location,
+    },
+    dateCreated: project.completion_year?.toString() || undefined,
+  }
+
+  const breadcrumbsJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
+      { '@type': 'ListItem', position: 2, name: 'Projects', item: `${baseUrl}/projects` },
+      { '@type': 'ListItem', position: 3, name: project.title, item: `${baseUrl}/projects/${project.slug}` },
+    ],
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsJsonLd) }}
+      />
       <section className="relative flex min-h-[50vh] items-center bg-navy-900 pt-32">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-navy-700 via-navy-900 to-navy-950" />
         <Container className="relative z-10">

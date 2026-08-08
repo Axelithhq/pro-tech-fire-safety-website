@@ -40,25 +40,109 @@ const jetbrains = JetBrains_Mono({
   display: 'swap',
 })
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://protechfiresafety.com'
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://protechfiresafety.com'),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: 'Pro-Tech Fire & Safety | Premier Fire Protection Engineering',
+    default: 'Pro-Tech Fire & Safety | Premier Fire Protection & Safety Engineering',
     template: '%s | Pro-Tech Fire & Safety',
   },
   description:
-    'India\'s premier fire protection engineering company. Comprehensive fire detection, suppression, and safety solutions for commercial, industrial, and residential projects.',
+    'Pro-Tech Fire & Safety is India\'s leading turnkey fire protection engineering enterprise. Specialized in NFPA & NBC compliant fire detection, automatic sprinkler systems, CO2 suppression, hydrants, and safety audits.',
   keywords: [
-    'fire safety',
-    'fire protection',
-    'fire detection',
-    'fire suppression',
-    'safety engineering',
-    'India',
+    'fire safety engineering',
+    'fire protection systems India',
+    'automatic fire sprinklers',
+    'fire alarm detection system',
+    'CO2 fire suppression system',
+    'fire hydrants installation',
+    'NBC compliant fire audit',
+    'NFPA fire safety contractor',
+    'turnkey EPC fire safety',
+    'Kolkata fire safety engineering',
+    'industrial fire safety solutions',
   ],
+  authors: [{ name: 'Pro-Tech Fire & Safety Engineering', url: siteUrl }],
+  creator: 'Pro-Tech Fire & Safety',
+  publisher: 'Pro-Tech Fire & Safety',
+  category: 'Engineering & Construction Safety',
   icons: {
     icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
   },
+  alternates: {
+    canonical: siteUrl,
+  },
+  openGraph: {
+    title: 'Pro-Tech Fire & Safety | Turnkey Fire Protection Engineering',
+    description:
+      'Turnkey fire detection, sprinkler systems, hydrants, gas suppression, and safety engineering for commercial, industrial, and infrastructure projects across India.',
+    url: siteUrl,
+    siteName: 'Pro-Tech Fire & Safety',
+    locale: 'en_IN',
+    type: 'website',
+    images: [
+      {
+        url: `${siteUrl}/icon.svg`,
+        width: 1200,
+        height: 630,
+        alt: 'Pro-Tech Fire & Safety Engineering',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pro-Tech Fire & Safety Engineering',
+    description:
+      'India\'s premier turnkey fire safety engineering and protection systems contractor.',
+    images: [`${siteUrl}/icon.svg`],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FireProtectionService',
+  name: 'Pro-Tech Fire & Safety',
+  url: siteUrl,
+  logo: `${siteUrl}/icon.svg`,
+  image: `${siteUrl}/icon.svg`,
+  description:
+    'India\'s premier fire protection engineering company. Turnkey fire detection, automatic sprinklers, hydrants, CO2 flooding systems, and NFPA/NBC safety compliance.',
+  telephone: '+91-9830000000',
+  email: 'info@protechfire.com',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Pro-Tech House, Sector 5',
+    addressLocality: 'Kolkata',
+    addressRegion: 'West Bengal',
+    postalCode: '700091',
+    addressCountry: 'IN',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: '22.5726',
+    longitude: '88.4331',
+  },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    opens: '09:00',
+    closes: '18:00',
+  },
+  priceRange: '$$$',
 }
 
 export default function RootLayout({
@@ -73,6 +157,12 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="min-h-screen">
         <ThemeProvider>
           <SuppressWarnings />
@@ -92,3 +182,4 @@ export default function RootLayout({
     </html>
   )
 }
+

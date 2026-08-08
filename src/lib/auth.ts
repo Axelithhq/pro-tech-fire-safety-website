@@ -4,10 +4,16 @@ const SESSION_COOKIE = 'admin_session'
 const SESSION_DURATION = 8 * 60 * 60 * 1000 // 8 hours
 
 function getAdminCreds() {
-  return {
-    email: process.env.ADMIN_EMAIL || 'admin@protechfire.com',
-    password: process.env.ADMIN_PASSWORD || 'Admin@2024',
+  const email = process.env.ADMIN_EMAIL
+  const password = process.env.ADMIN_PASSWORD
+
+  if (!email || !password) {
+    if (process.env.NODE_ENV === 'production') {
+      console.error('[AUTH ERROR] ADMIN_EMAIL or ADMIN_PASSWORD environment variable is missing!')
+    }
   }
+
+  return { email: email || '', password: password || '' }
 }
 
 export async function createSession(): Promise<string> {
@@ -46,7 +52,11 @@ export async function destroySession() {
 
 export function validateCredentials(email: string, password: string): boolean {
   const creds = getAdminCreds()
+  if (!creds.email || !creds.password) {
+    return false
+  }
   return email === creds.email && password === creds.password
 }
 
-export const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'admin@protechfire.com'
+export const ADMIN_EMAIL = process.env.ADMIN_EMAIL || ''
+

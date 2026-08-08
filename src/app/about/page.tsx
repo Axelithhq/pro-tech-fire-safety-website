@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { ShieldCheck, Target, Eye, Award, MapPin } from 'lucide-react'
 import { getTeam } from '@/lib/cms'
 import ScrollReveal from '@/components/ui/ScrollReveal'
@@ -8,6 +9,11 @@ import Section from '@/components/ui/Section'
 import Button from '@/components/ui/Button'
 import RichText from '@/components/ui/RichText'
 import HeroParticles from '@/components/effects/HeroParticles'
+
+export const metadata: Metadata = {
+  title: 'About Us | Turnkey Fire Protection Engineering Leadership',
+  description: 'Learn about Pro-Tech Fire & Safety, our leadership under Jayanth Mahapatra & Kavita Mahapatra, our journey across 20+ states, mission, vision, and core values.',
+}
 
 const hero = {
   title: 'Engineering Safety',

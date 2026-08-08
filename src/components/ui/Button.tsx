@@ -15,6 +15,8 @@ interface ButtonProps {
   onClick?: () => void
   type?: 'button' | 'submit'
   disabled?: boolean
+  target?: string
+  rel?: string
 }
 
 export default function Button({
@@ -26,6 +28,8 @@ export default function Button({
   onClick,
   type = 'button',
   disabled,
+  target,
+  rel,
 }: ButtonProps) {
   const ref = useRef<HTMLDivElement>(null)
   const reduced = useReducedMotion()
@@ -52,7 +56,7 @@ export default function Button({
   )
 
   const inner = href ? (
-    <Link href={href} className={base}>
+    <Link href={href} className={base} target={target} rel={rel}>
       {children}
     </Link>
   ) : (

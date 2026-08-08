@@ -56,7 +56,7 @@ export default function AdminLoginPage() {
             className="w-full rounded-lg bg-gold-500 px-4 py-3 text-sm font-semibold text-navy-900 hover:bg-gold-400 disabled:opacity-50 transition-colors">
             {loading ? 'Signing in...' : 'Sign In'}
           </button>
-          <p className="text-center text-xs text-navy-500">Default: admin@protechfire.com / Admin@2024</p>
+          <p className="text-center text-xs text-navy-500">Authorized Personnel Only • Enterprise Portal</p>
         </form>
       </div>
     </div>

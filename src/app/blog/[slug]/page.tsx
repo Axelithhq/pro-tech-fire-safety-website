@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { ArrowLeft, Calendar, Clock, User } from 'lucide-react'
 import { getPosts, getPostBySlug } from '@/lib/cms'
 import TextRevealHeading from '@/components/effects/TextRevealHeading'
@@ -6,13 +7,46 @@ import Section from '@/components/ui/Section'
 import Button from '@/components/ui/Button'
 import { notFound } from 'next/navigation'
 
+interface Props {
+  params: Promise<{ slug: string }>
+}
+
 export async function generateStaticParams() {
   const posts = await getPosts()
   return posts.map((p) => ({ slug: p.slug }))
 }
 
-interface Props {
-  params: Promise<{ slug: string }>
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params
+  const post = await getPostBySlug(slug)
+  if (!post) return {}
+
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://protechfiresafety.com'
+  const title = `${post.title}`
+  const description = post.summary.slice(0, 160)
+
+  return {
+    title,
+    description,
+    authors: [{ name: post.author }],
+    alternates: {
+      canonical: `${baseUrl}/blog/${post.slug}`,
+    },
+    openGraph: {
+      title: `${post.title} | Pro-Tech Fire & Safety Blog`,
+      description,
+      url: `${baseUrl}/blog/${post.slug}`,
+      type: 'article',
+      publishedTime: post.published_at || undefined,
+      authors: [post.author],
+      images: post.image_url ? [{ url: post.image_url }] : [],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description,
+    },
+  }
 }
 
 export default async function BlogPostPage({ params }: Props) {
@@ -20,8 +54,49 @@ export default async function BlogPostPage({ params }: Props) {
   const post = await getPostBySlug(slug)
   if (!post) notFound()
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://protechfiresafety.com'
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.summary,
+    author: {
+      '@type': 'Person',
+      name: post.author,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Pro-Tech Fire & Safety',
+      logo: {
+        '@type': 'ImageObject',
+        url: `${baseUrl}/icon.svg`,
+      },
+    },
+    datePublished: post.published_at || undefined,
+    mainEntityOfPage: `${baseUrl}/blog/${post.slug}`,
+  }
+
+  const breadcrumbsJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: `${baseUrl}/blog` },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `${baseUrl}/blog/${post.slug}` },
+    ],
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbsJsonLd) }}
+      />
       <section className="relative flex min-h-[40vh] items-center bg-navy-900 pt-32">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-navy-700 via-navy-900 to-navy-950" />
         <Container className="relative z-10">
